@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Coni Sassali - Consultora Psicológica</title>
+    <meta
+      name="description"
+      content="Consultoría psicológica virtual con Coni Sassali. Espacios de escucha, contención y transformación emocional centrados en la persona."
+    />
+
+    <!-- Fonts (pesos específicos para reducir peso del CSS de Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/Logo.webp" type="image/webp" />
+
+    <!-- Icons (cargadas como hoja de estilo externa) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+
+    <!-- Preload imagen principal (hero) -->
+    <link
+      rel="preload"
+      as="image"
+      href="assets/Conni-Sassali.webp"
+      imagesrcset="assets/Conni-Sassali.webp"
+      imagesizes="(min-width: 900px) 400px, 200px"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header-title">
+        <span class="header-name">Coni Sassali</span>
+        <span class="header-role">Consultora Psicológica</span>
+      </h1>
+
+      <img
+        class="header-img"
+        src="assets/Conni-Sassali.webp"
+        alt="Foto de la consultora psicológica Coni Sassali"
+        width="400"
+        height="400"
+        decoding="async"
+        fetchpriority="high"
+      />
+
+      <p class="header-text">
+        Consultoría psicológica virtual: espacios de escucha y transformación
+        emocional.
+      </p>
+
+      <a class="header-link" href="#contact"> Agenda tu consulta virtual </a>
+    </header>
+
+    <main class="main">
+      <section class="about" aria-labelledby="about-title">
+        <img
+          src="assets/Logo.webp"
+          alt="Logo del espacio de escucha activa de Coni Sassali"
+          class="about-img"
+          loading="lazy"
+          decoding="async"
+          width="200"
+          height="200"
+        />
+
+        <h2 id="about-title" class="about-title">Conoceme</h2>
+
+        <p class="about-text">
+          Soy consultora psicológica especializada en desarrollo personal,
+          crisis, pérdidas y duelos. Acompaño a personas en su proceso de
+          autoconocimiento y bienestar emocional a través de un espacio de
+          escucha activa, confidencial y libre de juicios. Trabajo de manera
+          virtual, ofreciendo un acompañamiento empático y profesional basado en
+          la psicología humanística y el enfoque centrado en la persona.
+        </p>
+      </section>
+
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title" class="contact-title">Contactame</h2>
+
+        <div class="social-networks">
+          <article class="social-network">
+            <a
+              href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0bjlCOWT6YQBan02s01MBbk1r9ofsgtwWJhwdIKXRNaqisNV2kTFsnoVNRkytNeQ9uG8omfycP"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Agendar una consulta virtual en Google Calendar"
+            >
+              <i class="ph ph-calendar-dots" aria-hidden="true"></i>
+            </a>
+            <p class="sn-text">Agenda una consulta virtual</p>
+          </article>
+
+          <article class="social-network">
+            <a
+              href="https://api.whatsapp.com/send/?phone=5491154620538&text&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Escribir por WhatsApp a Coni Sassali"
+            >
+              <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
+            </a>
+            <p class="sn-text">Escribime por WhatsApp</p>
+          </article>
+
+          <article class="social-network">
+            <a
+              href="https://www.instagram.com/sassaliconi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Ver el perfil de Instagram de Coni Sassali"
+            >
+              <i class="ph ph-instagram-logo" aria-hidden="true"></i>
+            </a>
+            <p class="sn-text">Conocé mi enfoque</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Meta Pixel (diferido al evento load para no bloquear carga crítica) -->
+    <script>
+      window.addEventListener("load", function () {
+        !(function (f, b, e, v, n, t, s) {
+          if (f.fbq) return;
+          n = f.fbq = function () {
+            n.callMethod
+              ? n.callMethod.apply(n, arguments)
+              : n.queue.push(arguments);
+          };
+          if (!f._fbq) f._fbq = n;
+          n.push = n;
+          n.loaded = true;
+          n.version = "2.0";
+          n.queue = [];
+          t = b.createElement(e);
+          t.async = true;
+          t.src = v;
+          s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s);
+        })(
+          window,
+          document,
+          "script",
+          "https://connect.facebook.net/en_US/fbevents.js"
+        );
+
+        fbq("init", "3367662533396164");
+        fbq("track", "PageView");
+      });
+    </script>
+
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=3367662533396164&ev=PageView&noscript=1"
+        alt=""
+      />
+    </noscript>
+  </body>
+</html>
